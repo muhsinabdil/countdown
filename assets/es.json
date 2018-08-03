@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "language_code": "es",
+    "author": "Vince Lombardi",
+    "text": "La diferencia entre un hombre exitoso y los demás no es la falta de fuerza, no es la falta de conocimiento, sino más bien la falta de voluntad."
+  },
+  {
+    "id": 2,
+    "language_code": "es",
+    "author": "Zig Ziglar",
+    "text": "La motivación te lleva hacia la acción, y la acción te lleva al cambio."
+  },
+  {
+    "id": 3,
+    "language_code": "es",
+    "author": "Confucio",
+    "text": "El que quiere hacer algo encuentra un medio; el que no quiere hacer nada encuentra una excusa."
+  },
+  {
+    "id": 4,
+    "language_code": "es",
+    "author": "Les Brown",
+    "text": "Para tener lo que nunca has tenido, debes hacer lo que nunca has hecho."
+  },
+  {
+    "id": 5,
+    "language_code": "es",
+    "author": "Winston Churchill",
+    "text": "El éxito no es definitivo, el fracaso no es fatal; lo que cuenta es el coraje para continuar."
+  },
+  {
+    "id": 6,
+    "language_code": "es",
+    "author": "Jim Rohn",
+    "text": "La motivación es lo que te pone en marcha, el hábito es lo que hace que sigas."
+  },
+  {
+    "id": 7,
+    "language_code": "es",
+    "author": "Napoleón Hill",
+    "text": "El punto de partida de todos los logros es el deseo."
+  },
+  {
+    "id": 8,
+    "language_code": "es",
+    "author": "Albert Einstein",
+    "text": "La vida es como andar en bicicleta, para mantener el equilibrio, debes seguir adelante."
+  },
+  {
+    "id": 9,
+    "language_code": "es",
+    "author": "Brian Tracy",
+    "text": "Establece una meta que te asuste un poco, pero que te emocione mucho."
+  },
+  {
+    "id": 10,
+    "language_code": "es",
+    "author": "Eleanor Roosevelt",
+    "text": "El futuro pertenece a aquellos que creen en la belleza de sus sueños."
+  },
+  {
+    "id": 11,
+    "language_code": "es",
+    "author": "Pablo Picasso",
+    "text": "La acción es la clave fundamental para todo éxito."
+  },
+  {
+    "id": 12,
+    "language_code": "es",
+    "author": "Steve Jobs",
+    "text": "Tu tiempo es limitado, así que no lo malgastes viviendo la vida de alguien más."
+  },
+  {
+    "id": 13,
+    "language_code": "es",
+    "author": "Dalai Lama",
+    "text": "La manera de empezar es dejar de hablar y empezar a hacer."
+  },
+  {
+    "id": 14,
+    "language_code": "es",
+    "author": "John C. Maxwell",
+    "text": "Un líder es alguien que conoce el camino, camina el camino y muestra el camino."
+  },
+  {
+    "id": 15,
+    "language_code": "es",
+    "author": "Henry Ford",
+    "text": "El único obstáculo insuperable es la falta de voluntad."
+  },
+  {
+    "id": 16,
+    "language_code": "es",
+    "author": "Oprah Winfrey",
+    "text": "Piensa como una reina. Una reina no tiene miedo de fallar. El fracaso es otro escalón hacia la grandeza."
+  },
+  {
+    "id": 17,
+    "language_code": "es",
+    "author": "Ralph Waldo Emerson",
+    "text": "No te acerques a una tarea con la idea de que lo intentarás. En cambio, entra con la certeza de que lo harás."
+  },
+  {
+    "id": 18,
+    "language_code": "es",
+    "author": "Thomas Edison",
+    "text": "El genio es un uno por ciento de inspiración y un noventa y nueve por ciento de transpiración."
+  },
+  {
+    "id": 19,
+    "language_code": "es",
+    "author": "Viktor Frankl",
+    "text": "La última de las libertades humanas es elegir la actitud en cualquier conjunto de circunstancias."
+  },
+  {
+    "id": 20,
+    "language_code": "es",
+    "author": "Nelson Mandela",
+    "text": "No hay camino fácil hacia la libertad en cualquier lugar, y muchos de nosotros tendremos que pasar por el valle de la sombra de la muerte una y otra vez antes de llegar a la cima de la montaña de nuestros deseos."
+  },
+  {
+    "id": 21,
+    "language_code": "es",
+    "author": "Aristóteles",
+    "text": "La excelencia no es un acto, sino un hábito."
+  },
+  {
+    "id": 22,
+    "language_code": "es",
+    "author": "J.K. Rowling",
+    "text": "La verdadera valentía está en saber que está mal levantarse, pero levantarse de todos modos."
+  },
+  {
+    "id": 23,
+    "language_code": "es",
+    "author": "Miguel de Cervantes",
+    "text": "La verdad adelgaza y no quiebra, y siempre anda sobre la mentira como el aceite sobre el agua."
+  },
+  {
+    "id": 24,
+    "language_code": "es",
+    "author": "Les Brown",
+    "text": "Es posible que no llegues donde intentas ir, pero seguro que estarás mejor de lo que estarías si no lo intentaras."
+  },
+  {
+    "id": 25,
+    "language_code": "es",
+    "author": "Rosa Parks",
+    "text": "No tengo miedo de vivir. Tengo miedo de no intentar algo nuevo."
+  },
+  {
+    "id": 26,
+    "language_code": "es",
+    "author": "William Shakespeare",
+    "text": "Nuestra duda es traición y nos hace perder lo bueno que podríamos ganar al temer intentarlo."
+  },
+  {
+    "id": 27,
+    "language_code": "es",
+    "author": "Coco Chanel",
+    "text": "La oportunidad no llama dos veces a la misma puerta."
+  },
+  {
+    "id": 28,
+    "language_code": "es",
+    "author": "Ralph Waldo Emerson",
+    "text": "Lo que tememos hacer por lo general es lo que más necesitamos hacer."
+  },
+  {
+    "id": 29,
+    "language_code": "es",
+    "author": "Vincent van Gogh",
+    "text": "Lo que me preocupa no es que hayas fallado, sino que estás dispuesto a rendirte."
+  },
+  {
+    "id": 30,
+    "language_code": "es",
+    "author": "Ayn Rand",
+    "text": "La pregunta no es quién va a dejarme; es quién va a detenerme."
+  },
+  {
+    "id": 31,
+    "language_code": "es",
+    "author": "Walt Disney",
+    "text": "Si puedes soñarlo, puedes hacerlo."
+  },
+  {
+    "id": 32,
+    "language_code": "es",
+    "author": "Thomas Jefferson",
+    "text": "No dejes para mañana lo que puedes hacer hoy."
+  },
+  {
+    "id": 33,
+    "language_code": "es",
+    "author": "Arnold Schwarzenegger",
+    "text": "Nunca veo el fracaso como fracaso, siempre lo veo como el próximo paso hacia el éxito."
+  },
+  {
+    "id": 34,
+    "language_code": "es",
+    "author": "Muhammad Ali",
+    "text": "No cuentan los días, haz que los días cuenten."
+  },
+  {
+    "id": 35,
+    "language_code": "es",
+    "author": "Martin Luther King Jr.",
+    "text": "La oscuridad no puede expulsar a la oscuridad; solo la luz puede hacer eso. El odio no puede expulsar al odio; solo el amor puede hacer eso."
+  },
+  {
+    "id": 36,
+    "language_code": "es",
+    "author": "Eleanor Roosevelt",
+    "text": "El futuro pertenece a aquellos que creen en la belleza de sus sueños."
+  },
+  {
+    "id": 37,
+    "language_code": "es",
+    "author": "Vince Lombardi",
+    "text": "Ganar no es todo, pero querer ganar sí lo es."
+  },
+  {
+    "id": 38,
+    "language_code": "es",
+    "author": "Winston Churchill",
+    "text": "Nunca te rindas, nunca, nunca, nunca, nunca, en nada grande o pequeño, grande o insignificante. Nunca te rindas excepto con la convicción de honor y buen sentido."
+  },
+  {
+    "id": 39,
+    "language_code": "es",
+    "author": "Albert Einstein",
+    "text": "La vida es como una bicicleta, para mantener el equilibrio, debes seguir adelante."
+  },
+  {
+    "id": 40,
+    "language_code": "es",
+    "author": "Oprah Winfrey",
+    "text": "La gran aventura está en lo desconocido."
+  },
+  {
+    "id": 41,
+    "language_code": "es",
+    "author": "Zig Ziglar",
+    "text": "La motivación es como la ducha diaria, necesitas renovarla todos los días."
+  },
+  {
+    "id": 42,
+    "language_code": "es",
+    "author": "Confucio",
+    "text": "Aquél que no se preocupa de sus propios problemas, no puede ocuparse de los problemas de los demás."
+  },
+  {
+    "id": 43,
+    "language_code": "es",
+    "author": "Jim Rohn",
+    "text": "El éxito no es algo que persigues. Es algo que atraes por la persona en la que te conviertes."
+  },
+  {
+    "id": 44,
+    "language_code": "es",
+    "author": "Napoleón Hill",
+    "text": "La mayoría de la gente tiende a aceptar la vida tal como se les presenta. No se dan cuenta de que pueden formar su propia vida por la fuerza de su propio pensamiento."
+  },
+  {
+    "id": 45,
+    "language_code": "es",
+    "author": "Brian Tracy",
+    "text": "La gente exitosa hace lo que la gente no exitosa no está dispuesta a hacer."
+  },
+  {
+    "id": 46,
+    "language_code": "es",
+    "author": "Eleanor Roosevelt",
+    "text": "No se puede vivir una vida positiva con una mente negativa."
+  },
+  {
+    "id": 47,
+    "language_code": "es",
+    "author": "Pablo Picasso",
+    "text": "La inspiración existe, pero tiene que encontrarte trabajando."
+  },
+  {
+    "id": 48,
+    "language_code": "es",
+    "author": "Steve Jobs",
+    "text": "No tienes que ser un genio para tener éxito. Pero sí tienes que ser incluso más listo que el genio."
+  },
+  {
+    "id": 49,
+    "language_code": "es",
+    "author": "Dalai Lama",
+    "text": "Recuerda que no conseguir lo que quieres es a veces un golpe de suerte maravilloso."
+  },
+  {
+    "id": 50,
+    "language_code": "es",
+    "author": "Les Brown",
+    "text": "Haz que el resto de tu vida sea lo mejor de tu vida."
+  }
+]

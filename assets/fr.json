@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "language_code": "fr",
+    "author": "Victor Hugo",
+    "text": "Küçük düşünmek, küçük yaşamaktır. Büyük düşün, büyük yaşa."
+  },
+  {
+    "id": 2,
+    "language_code": "fr",
+    "author": "Napoleon Hill",
+    "text": "Siz ne düşündüğünüze odaklanırsınız, o da sizin gerçekliğiniz olur."
+  },
+  {
+    "id": 3,
+    "language_code": "fr",
+    "author": "Albert Schweitzer",
+    "text": "Başkalarına yardım etmek, gerçek mutluluğun anahtarıdır."
+  },
+  {
+    "id": 4,
+    "language_code": "fr",
+    "author": "Coco Chanel",
+    "text": "Başarının sırlarından biri, düşmanlarınızın sizi takdir etmesini sağlamaktır."
+  },
+  {
+    "id": 5,
+    "language_code": "fr",
+    "author": "Vincent van Gogh",
+    "text": "Hayatta yapabileceğiniz en güzel şey, birine yardım etmektir."
+  },
+  {
+    "id": 6,
+    "language_code": "fr",
+    "author": "Antoine de Saint-Exupéry",
+    "text": "Gerçekten önemli olanı görmek için gözlerimizi kalbimizle açmalıyız."
+  },
+  {
+    "id": 7,
+    "language_code": "fr",
+    "author": "Marie Curie",
+    "text": "Hiçbir şey kaybolmaz, her şey değişir."
+  },
+  {
+    "id": 8,
+    "language_code": "fr",
+    "author": "Voltaire",
+    "text": "Gerçek mutluluk, başkalarının kusurlarını görmezden gelmekte yatar."
+  },
+  {
+    "id": 9,
+    "language_code": "fr",
+    "author": "Jean-Paul Sartre",
+    "text": "Hayatımızın anlamını kendimiz yaratırız."
+  },
+  {
+    "id": 10,
+    "language_code": "fr",
+    "author": "Simone de Beauvoir",
+    "text": "Özgürlük, başkalarını unutmak değil, kendini hatırlamaktır."
+  },
+  {
+    "id": 11,
+    "language_code": "fr",
+    "author": "Romain Rolland",
+    "text": "Büyük insanlar, engelleri aşanlardır."
+  },
+  {
+    "id": 12,
+    "language_code": "fr",
+    "author": "Gustave Flaubert",
+    "text": "Küçük düşünmek, büyük günah işlemektir."
+  },
+  {
+    "id": 13,
+    "language_code": "fr",
+    "author": "Marcel Proust",
+    "text": "Geçmişin değeri, ondan ders çıkarmakta yatar."
+  },
+  {
+    "id": 14,
+    "language_code": "fr",
+    "author": "Henri Matisse",
+    "text": "Sanat, duygu aracılığıyla ifade edilen bir gerçektir."
+  },
+  {
+    "id": 15,
+    "language_code": "fr",
+    "author": "Edith Piaf",
+    "text": "Hiçbir şeyden korkma, yaşamak için yeterince uzun zamanın yok."
+  },
+  {
+    "id": 16,
+    "language_code": "fr",
+    "author": "Blaise Pascal",
+    "text": "Kalp, akıl tarafından bilinemez, sadece hissedilebilir."
+  },
+  {
+    "id": 17,
+    "language_code": "fr",
+    "author": "Edmond Rostand",
+    "text": "Sevgi, bir başkasının hayatını kendi yaşamak olarak görmektir."
+  },
+  {
+    "id": 18,
+    "language_code": "fr",
+    "author": "René Descartes",
+    "text": "Düşünüyorum, öyleyse varım."
+  },
+  {
+    "id": 19,
+    "language_code": "fr",
+    "author": "Albert Camus",
+    "text": "Hayat anlamsızdır, bu yüzden ona anlam katmalıyız."
+  },
+  {
+    "id": 20,
+    "language_code": "fr",
+    "author": "Claude Monet",
+    "text": "Güzelliği görmek için açık gözlere ihtiyaç vardır."
+  },
+  {
+    "id": 21,
+    "language_code": "fr",
+    "author": "Alexandre Dumas",
+    "text": "Bir insanın büyüklüğü, ne kadar zor durumda olduğunda ortaya çıkar."
+  },
+  {
+    "id": 22,
+    "language_code": "fr",
+    "author": "Henri Bergson",
+    "text": "Zaman, insanın yaptıklarını anlaması için bir araçtır."
+  },
+  {
+    "id": 23,
+    "language_code": "fr",
+    "author": "Jean Cocteau",
+    "text": "Sanat, gerçeği olduğu gibi değil, olduğu gibi hissetmemizi sağlar."
+  },
+  {
+    "id": 24,
+    "language_code": "fr",
+    "author": "Jules Verne",
+    "text": "Hayal gücü, dünyayı değiştirmek için kullanılmalıdır."
+  },
+  {
+    "id": 25,
+    "language_code": "fr",
+    "author": "Georges Duhamel",
+    "text": "Başarı, engellerle karşılaşanların cesaretini koruyabilenlerindir."
+  },
+  {
+    "id": 26,
+    "language_code": "fr",
+    "author": "Emile Zola",
+    "text": "Bir insanın gerçek güzelliği, içindeki iyilik ve sevgiden gelir."
+  },
+  {
+    "id": 27,
+    "language_code": "fr",
+    "author": "Pierre-Auguste Renoir",
+    "text": "Sanat, görünmeyeni görmek için bir yol sunar."
+  },
+  {
+    "id": 28,
+    "language_code": "fr",
+    "author": "Gustave Eiffel",
+    "text": "Büyük başarılar, küçük adımlarla başlar."
+  },
+  {
+    "id": 29,
+    "language_code": "fr",
+    "author": "Paul Valéry",
+    "text": "Bir insanın değeri, söylediklerinden ziyade yaptıklarıyla ölçülür."
+  },
+  {
+    "id": 30,
+    "language_code": "fr",
+    "author": "Honoré de Balzac",
+    "text": "İnsan, hayalleriyle yaşar."
+  },
+  {
+    "id": 31,
+    "language_code": "fr",
+    "author": "Gérard de Nerval",
+    "text": "Zorluklar, güçlülerin güçlerini test ettiği yerdir."
+  },
+  {
+    "id": 32,
+    "language_code": "fr",
+    "author": "Henri Cartier-Bresson",
+    "text": "Bir fotoğraf, bir anın sonsuzluğunu yakalar."
+  },
+  {
+    "id": 33,
+    "language_code": "fr",
+    "author": "François Truffaut",
+    "text": "Sinema, duyguları resmetmenin bir yoludur."
+  },
+  {
+    "id": 34,
+    "language_code": "fr",
+    "author": "Gabriel García Márquez",
+    "text": "Hayatın en zorlu anları, karar verme anlarıdır."
+  },
+  {
+    "id": 35,
+    "language_code": "fr",
+    "author": "Edgar Degas",
+    "text": "Sanat, hayatı anlamak için bir yol sunar."
+  },
+  {
+    "id": 36,
+    "language_code": "fr",
+    "author": "Molière",
+    "text": "Gülmek, zekanın bir göstergesidir."
+  },
+  {
+    "id": 37,
+    "language_code": "fr",
+    "author": "Jean-Jacques Rousseau",
+    "text": "Gerçek özgürlük, başkalarının bizi nasıl gördüğünü umursamamaktır."
+  },
+  {
+    "id": 38,
+    "language_code": "fr",
+    "author": "Auguste Rodin",
+    "text": "Sanat, duygu ve düşüncenin birleşimidir."
+  },
+  {
+    "id": 39,
+    "language_code": "fr",
+    "author": "Gustave Courbet",
+    "text": "Sanat, doğayı taklit etmek değil, onun ruhunu yakalamaktır."
+  },
+  {
+    "id": 40,
+    "language_code": "fr",
+    "author": "Guy de Maupassant",
+    "text": "Hayat, yaşamak için bir neden bulma sanatıdır."
+  },
+  {
+    "id": 41,
+    "language_code": "fr",
+    "author": "Paul Cézanne",
+    "text": "Sanat, gördüğümüzü değil, hissettiğimizi ifade etme sanatıdır."
+  },
+  {
+    "id": 42,
+    "language_code": "fr",
+    "author": "Anatole France",
+    "text": "Bilgi, bilgelikle birleştiğinde değer kazanır."
+  },
+  {
+    "id": 43,
+    "language_code": "fr",
+    "author": "Jean de La Fontaine",
+    "text": "Bir gülüş, bir günü aydınlatabilir."
+  },
+  {
+    "id": 44,
+    "language_code": "fr",
+    "author": "Pierre Curie",
+    "text": "Bilim, gerçeği keşfetmenin bir yoludur."
+  },
+  {
+    "id": 45,
+    "language_code": "fr",
+    "author": "Gaston Bachelard",
+    "text": "Hayal gücü, bilginin ötesine geçer."
+  },
+  {
+    "id": 46,
+    "language_code": "fr",
+    "author": "Stendhal",
+    "text": "Güzellik, içsel bir zevk ve dışsal bir uyum arasındaki dengeye dayanır."
+  },
+  {
+    "id": 47,
+    "language_code": "fr",
+    "author": "Albert Szent-Györgyi",
+    "text": "Keşif, zihinsel bir yolculuktur."
+  },
+  {
+    "id": 48,
+    "language_code": "fr",
+    "author": "Marguerite Yourcenar",
+    "text": "Yaşamak, öğrenmek için bir fırsattır."
+  },
+  {
+    "id": 49,
+    "language_code": "fr",
+    "author": "François Rabelais",
+    "text": "Büyük düşünmek, büyük bir kalp ile yaşamaktır."
+  },
+  {
+    "id": 50,
+    "language_code": "fr",
+    "author": "Franz Kafka",
+    "text": "Hayatta her şey mümkündür, ama biraz cesaret gerekir."
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "language_code": "tr",
+    "author": "Cemal Süreya",
+    "text": "Hayat kısa, kafamızdaki büyük düşünceleri gerçekleştirmek için zamanımız yok."
+  },
+  {
+    "id": 2,
+    "language_code": "tr",
+    "author": "Napoleon Hill",
+    "text": "Hayalinizdeki dağları, taşları yerinden oynatacak kadar güçlü olun."
+  },
+  {
+    "id": 3,
+    "language_code": "tr",
+    "author": "Albert Einstein",
+    "text": "Hayatınızdaki her gün sayısız fırsat barındırır, sadece görmek için açık olmalısınız."
+  },
+  {
+    "id": 4,
+    "language_code": "tr",
+    "author": "Mevlana",
+    "text": "Sözünüzü tutun, çünkü sözünüz sizsiniz."
+  },
+  {
+    "id": 5,
+    "language_code": "tr",
+    "author": "Walt Disney",
+    "text": "Hayalinizdeki bir şeyi düşünebiliyorsanız, onu gerçekleştirmek için yapabilirsiniz."
+  },
+  {
+    "id": 6,
+    "language_code": "tr",
+    "author": "Epiktetos",
+    "text": "Kontrol edebileceğiniz şeylere odaklanın, gerisini akışa bırakın."
+  },
+  {
+    "id": 7,
+    "language_code": "tr",
+    "author": "Oscar Wilde",
+    "text": "Hayatta başarılı olmak için tek ihtiyacınız olan şey, istemektir."
+  },
+  {
+    "id": 8,
+    "language_code": "tr",
+    "author": "Thomas Edison",
+    "text": "Başarı, başarısızlıkla karşılaştığınızda pes etmemekte yatar; her başarısızlık, bir adım daha yaklaşmanız anlamına gelir."
+  },
+  {
+    "id": 9,
+    "language_code": "tr",
+    "author": "Confucius",
+    "text": "Büyük bir adım atmadan önce, küçük bir adım atmayı reddetme."
+  },
+  {
+    "id": 10,
+    "language_code": "tr",
+    "author": "Les Brown",
+    "text": "Hayalinizi gerçekleştirmek için başkalarına ihtiyacınız yok, sadece inanın ve harekete geçin."
+  },
+  {
+    "id": 11,
+    "language_code": "tr",
+    "author": "Cemal Süreya",
+    "text": "Siz bilmeseniz de, hayat sizi bir yerlere götürüyor. Yeter ki, ona güvenin."
+  },
+  {
+    "id": 12,
+    "language_code": "tr",
+    "author": "Napoleon Bonaparte",
+    "text": "Zaferin sırrı, düşmanın ne yapacağını bilmekte değil, ne yapacağınızdır."
+  },
+  {
+    "id": 13,
+    "language_code": "tr",
+    "author": "Mevlana",
+    "text": "Düşmeden yürümeyi öğrenemezsiniz. Başarı, hatalardan ders çıkarmaktır."
+  },
+  {
+    "id": 14,
+    "language_code": "tr",
+    "author": "Winston Churchill",
+    "text": "Başarısızlığa uğramak cesaretinizi kırmamalı, çünkü başarısızlık, başarının anahtarıdır."
+  },
+  {
+    "id": 15,
+    "language_code": "tr",
+    "author": "Epiktetos",
+    "text": "Sizi küçük düşüren şeylere takılmayın; sadece hedefinize odaklanın."
+  },
+  {
+    "id": 16,
+    "language_code": "tr",
+    "author": "Oprah Winfrey",
+    "text": "Hayatınızı istediğiniz gibi yaşamak için, cesur olmalısınız ve kendi yolunuzdan gitmelisiniz."
+  },
+  {
+    "id": 17,
+    "language_code": "tr",
+    "author": "Thomas Edison",
+    "text": "Bir şeyi imkansız olarak düşündüğünüzde, onu gerçekleştirmeniz daha zordur."
+  },
+  {
+    "id": 18,
+    "language_code": "tr",
+    "author": "Confucius",
+    "text": "Büyük düşünmek, büyük hayaller kurmak ve cesurca adım atmak, büyük başarılar getirir."
+  },
+  {
+    "id": 19,
+    "language_code": "tr",
+    "author": "Les Brown",
+    "text": "Hayatta sadece var olmuyoruz, aynı zamanda etki ediyoruz. İyi bir etki bırakın."
+  },
+  {
+    "id": 20,
+    "language_code": "tr",
+    "author": "Cemal Süreya",
+    "text": "Hayat sadece yaşanmaz, aynı zamanda anlamlı kılınır. Anlam arayışını bırakmayın."
+  },
+  {
+    "id": 21,
+    "language_code": "tr",
+    "author": "Napoleon Bonaparte",
+    "text": "Savaşta galip gelmek için sadece düşmanınızı değil, aynı zamanda kendinizi de tanımalısınız."
+  },
+  {
+    "id": 22,
+    "language_code": "tr",
+    "author": "Mevlana",
+    "text": "Kalbinizdeki ateş sizi aydınlatır. O ateşi söndürmeyin, rehberiniz o olsun."
+  },
+  {
+    "id": 23,
+    "language_code": "tr",
+    "author": "Walt Disney",
+    "text": "En iyi yol bulamıyorsanız, yeni bir yol açın."
+  },
+  {
+    "id": 24,
+    "language_code": "tr",
+    "author": "Epiktetos",
+    "text": "Başkalarının düşünceleri üzerinde endişelenmek, gerçek potansiyelinizi ortaya çıkarmaktan sizi alıkoyar."
+  },
+  {
+    "id": 25,
+    "language_code": "tr",
+    "author": "Oscar Wilde",
+    "text": "Kendi değerinizi başkalarının eline bırakmayın, çünkü siz eşsiz bir değerdesiniz."
+  },
+  {
+    "id": 26,
+    "language_code": "tr",
+    "author": "Thomas Edison",
+    "text": "Başarısızlık sadece yeni bir başlangıçtır, başka bir fırsattır."
+  },
+  {
+    "id": 27,
+    "language_code": "tr",
+    "author": "Confucius",
+    "text": "Bir adım geri gitmek, iki adım ileri gitmekten daha iyidir."
+  },
+  {
+    "id": 28,
+    "language_code": "tr",
+    "author": "Les Brown",
+    "text": "Başarıya giden yol, bilgi ve çalışma ile döşenmiştir."
+  },
+  {
+    "id": 29,
+    "language_code": "tr",
+    "author": "Cemal Süreya",
+    "text": "Hayatta başkalarının ne düşündüğünden çok, sizin ne düşündüğünüz önemlidir."
+  },
+  {
+    "id": 30,
+    "language_code": "tr",
+    "author": "Napoleon Bonaparte",
+    "text": "Zafer, cesaretin sürdürüldüğü yerde bulunur."
+  },
+  {
+    "id": 31,
+    "language_code": "tr",
+    "author": "Mevlana",
+    "text": "Yolunu kaybetmiş gibi hissettiğinizde, kalbinizi dinleyin. O sizi doğru yöne götürecektir."
+  },
+  {
+    "id": 32,
+    "language_code": "tr",
+    "author": "Walt Disney",
+    "text": "İmkansız gibi görünen şeyler, genellikle mümkün olanlardan biraz daha fazla çaba gerektirir."
+  },
+  {
+    "id": 33,
+    "language_code": "tr",
+    "author": "Epiktetos",
+    "text": "Başkalarının sizi değerlendirmesine izin vermek, kendi değerinizi unutmanıza neden olabilir."
+  },
+  {
+    "id": 34,
+    "language_code": "tr",
+    "author": "Oprah Winfrey",
+    "text": "Hayatta her zaman bir seçeneğiniz vardır. Seçimleriniz sizi şekillendirir."
+  },
+  {
+    "id": 35,
+    "language_code": "tr",
+    "author": "Thomas Edison",
+    "text": "Başarılı olmak için bir yol bulamıyorsanız, bir yol açın."
+  },
+  {
+    "id": 36,
+    "language_code": "tr",
+    "author": "Confucius",
+    "text": "Başarı, her gün biraz daha iyi olmaktır."
+  },
+  {
+    "id": 37,
+    "language_code": "tr",
+    "author": "Les Brown",
+    "text": "Sınırlarınızı zorlamadan, sınırlarınızı genişletemezsiniz."
+  },
+  {
+    "id": 38,
+    "language_code": "tr",
+    "author": "Cemal Süreya",
+    "text": "Yürüdüğünüz yolu sevin, çünkü sizi nereye götürdüğünü bilemezsiniz."
+  },
+  {
+    "id": 39,
+    "language_code": "tr",
+    "author": "Napoleon Bonaparte",
+    "text": "Bir zafer için savaşmadan, bir zafer kazanamazsınız."
+  },
+  {
+    "id": 40,
+    "language_code": "tr",
+    "author": "Mevlana",
+    "text": "Kendi iç dünyanızı keşfedin, çünkü gerçek güç orada yatar."
+  },
+  {
+    "id": 41,
+    "language_code": "tr",
+    "author": "Walt Disney",
+    "text": "Başarılı olmak için sadece düşlemek yetmez, aynı zamanda inanmak ve çalışmak gerekir."
+  },
+  {
+    "id": 42,
+    "language_code": "tr",
+    "author": "Epiktetos",
+    "text": "Sizi zayıf hissettiren şeylere takılmayın; güçlü olduğunuz yönleri keşfedin."
+  },
+  {
+    "id": 43,
+    "language_code": "tr",
+    "author": "Oscar Wilde",
+    "text": "Büyük düşünün, büyük hayal edin ve ardından büyük bir eylemle harekete geçin."
+  },
+  {
+    "id": 44,
+    "language_code": "tr",
+    "author": "Thomas Edison",
+    "text": "Bir şeyi başarmak için sadece bir yol bulmalısınız; o yol kapalıysa, başka bir yol açın."
+  },
+  {
+    "id": 45,
+    "language_code": "tr",
+    "author": "Confucius",
+    "text": "Bir hedefe ulaşmak için sabırlı olmalısınız, çünkü büyük başarılar zaman alır."
+  },
+  {
+    "id": 46,
+    "language_code": "tr",
+    "author": "Les Brown",
+    "text": "Başkalarının sınırlarını aşmak için kendi sınırlarınızı aşın."
+  },
+  {
+    "id": 47,
+    "language_code": "tr",
+    "author": "Cemal Süreya",
+    "text": "Yaşamak bir sanattır, kendi şaheserinizi yaratın."
+  },
+  {
+    "id": 48,
+    "language_code": "tr",
+    "author": "Napoleon Bonaparte",
+    "text": "Bir savaşı kazanmak için, düşmanınızı tanımalısınız."
+  },
+  {
+    "id": 49,
+    "language_code": "tr",
+    "author": "Mevlana",
+    "text": "Kendinizi tanıyın, çünkü gerçek güç orada yatar."
+  },
+  {
+    "id": 50,
+    "language_code": "tr",
+    "author": "Walt Disney",
+    "text": "Bir şeyi başarmak için sadece düşlemek yetmez, aynı zamanda inanmak ve çalışmak gerekir."
+  }
+]

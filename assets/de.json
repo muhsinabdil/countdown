@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "language_code": "de",
+    "author": "Unbekannt",
+    "text": "Gehe niemals ohne einen Traum ins Bett."
+  },
+  {
+    "id": 2,
+    "language_code": "de",
+    "author": "Konfuzius",
+    "text": "Unsere größte Schwäche liegt im Aufgeben. Der sichere Weg führt zum Misserfolg."
+  },
+  {
+    "id": 3,
+    "language_code": "de",
+    "author": "Walt Disney",
+    "text": "Alle unsere Träume können wahr werden, wenn wir den Mut haben, ihnen zu folgen."
+  },
+  {
+    "id": 4,
+    "language_code": "de",
+    "author": "Napoleon Hill",
+    "text": "Zielsetzung ist der erste Schritt in der Verwirklichung von Träumen."
+  },
+  {
+    "id": 5,
+    "language_code": "de",
+    "author": "Winston Churchill",
+    "text": "Erfolg ist nicht endgültig, Misserfolg ist nicht fatal: Das Wichtigste ist der Mut, weiterzumachen."
+  },
+  {
+    "id": 6,
+    "language_code": "de",
+    "author": "Albert Einstein",
+    "text": "Fantasie ist wichtiger als Wissen, denn Wissen ist begrenzt."
+  },
+  {
+    "id": 7,
+    "language_code": "de",
+    "author": "Henry Ford",
+    "text": "Ob du denkst, du kannst es, oder du denkst, du kannst es nicht – du wirst in beiden Fällen recht behalten."
+  },
+  {
+    "id": 8,
+    "language_code": "de",
+    "author": "Les Brown",
+    "text": "Zu viele von uns leben unser Leben auf der Grundlage dessen, was andere von uns denken."
+  },
+  {
+    "id": 9,
+    "language_code": "de",
+    "author": "Ralph Waldo Emerson",
+    "text": "Nichts Großes wurde jemals ohne Begeisterung erreicht."
+  },
+  {
+    "id": 10,
+    "language_code": "de",
+    "author": "Eleanor Roosevelt",
+    "text": "Der Zweck des Lebens besteht nicht darin, zu gewinnen. Der Zweck des Lebens besteht darin, zu wachsen und zu teilen."
+  },
+  {
+    "id": 11,
+    "language_code": "de",
+    "author": "Dalai Lama",
+    "text": "Glück ist nicht etwas Fertiges. Es kommt durch deine eigenen Handlungen."
+  },
+  {
+    "id": 12,
+    "language_code": "de",
+    "author": "Steve Jobs",
+    "text": "Deine Arbeit wird einen großen Teil deines Lebens einnehmen, und die einzige Möglichkeit, wirklich zufrieden zu sein, ist, das zu tun, was du für eine großartige Arbeit hältst."
+  },
+  {
+    "id": 13,
+    "language_code": "de",
+    "author": "Vince Lombardi",
+    "text": "Der Erfolg ist nicht das Ergebnis von spontanen Anstrengungen. Du musst dir einen Kopf machen, bevor du einen Kopf machst."
+  },
+  {
+    "id": 14,
+    "language_code": "de",
+    "author": "Jim Rohn",
+    "text": "Die einzige Grenze für unseren Einfluss besteht in unserem eigenen Denken."
+  },
+  {
+    "id": 15,
+    "language_code": "de",
+    "author": "John C. Maxwell",
+    "text": "Ein Anführer ist jemand, der weiß, wohin er gehen soll und wer andere mitnimmt."
+  },
+  {
+    "id": 16,
+    "language_code": "de",
+    "author": "Oprah Winfrey",
+    "text": "Du erhältst im Leben das, was du erlaubst."
+  },
+  {
+    "id": 17,
+    "language_code": "de",
+    "author": "Thomas Edison",
+    "text": "Ich habe nicht versagt. Ich habe nur 10.000 Wege gefunden, die nicht funktionieren."
+  },
+  {
+    "id": 18,
+    "language_code": "de",
+    "author": "Rumi",
+    "text": "Die Wunde ist der Ort, an dem das Licht eintritt."
+  },
+  {
+    "id": 19,
+    "language_code": "de",
+    "author": "Mark Twain",
+    "text": "Die zwei wichtigsten Tage in deinem Leben sind der Tag, an dem du geboren wurdest, und der Tag, an dem du herausfindest, warum."
+  },
+  {
+    "id": 20,
+    "language_code": "de",
+    "author": "Thomas Jefferson",
+    "text": "Ich finde je härter ich arbeite, desto mehr Glück habe ich."
+  },
+  {
+    "id": 21,
+    "language_code": "de",
+    "author": "Arnold Schwarzenegger",
+    "text": "Wenn du denkst, dass du es nicht schaffen kannst, dann tust du es wahrscheinlich nicht."
+  },
+  {
+    "id": 22,
+    "language_code": "de",
+    "author": "Nelson Mandela",
+    "text": "Es scheint immer unmöglich, bis es erledigt ist."
+  },
+  {
+    "id": 23,
+    "language_code": "de",
+    "author": "Theodore Roosevelt",
+    "text": "Glaube an dich selbst und alles ist möglich."
+  },
+  {
+    "id": 24,
+    "language_code": "de",
+    "author": "Denis Waitley",
+    "text": "Du bist erfolgreich, wenn du weißt, was du tun musst, um das zu bekommen, was du willst."
+  },
+  {
+    "id": 25,
+    "language_code": "de",
+    "author": "Michael Jordan",
+    "text": "Ich habe mehr als 9.000 Würfe in meiner Karriere verpasst. Ich habe fast 300 Spiele verloren. 26 Mal wurde mir der spielentscheidende Wurf anvertraut und ich habe danebengezielt. Ich habe immer wieder versagt in meinem Leben. Und deshalb bin ich erfolgreich."
+  },
+  {
+    "id": 26,
+    "language_code": "de",
+    "author": "Zig Ziglar",
+    "text": "Du musst wissen, was du willst, bevor du es haben kannst."
+  },
+  {
+    "id": 27,
+    "language_code": "de",
+    "author": "William Shakespeare",
+    "text": "Unsere Zweifel sind Verräter, und oft verlieren wir das Gute, weil wir uns daran wagen, das Bessere zu suchen."
+  },
+  {
+    "id": 28,
+    "language_code": "de",
+    "author": "Seneca",
+    "text": "Es ist nicht, dass wir zu wenig Zeit haben, sondern dass wir zu viel verlieren."
+  },
+  {
+    "id": 29,
+    "language_code": "de",
+    "author": "Jim Valvano",
+    "text": "Mein Ziel ist es, jeden Tag ein wenig besser zu sein."
+  },
+  {
+    "id": 30,
+    "language_code": "de",
+    "author": "Aristoteles",
+    "text": "Exzellenz ist keine Handlung, sondern eine Gewohnheit."
+  },
+  {
+    "id": 31,
+    "language_code": "de",
+    "author": "Ralph Marston",
+    "text": "Was du heute tust, ist wichtiger als das, was du morgen tun wirst."
+  },
+  {
+    "id": 32,
+    "language_code": "de",
+    "author": "George Addair",
+    "text": "Alles, was du willst, ist auf der anderen Seite der Angst."
+  },
+  {
+    "id": 33,
+    "language_code": "de",
+    "author": "Babe Ruth",
+    "text": "Es ist schwer, jemanden zu schlagen, der niemals aufgibt."
+  },
+  {
+    "id": 34,
+    "language_code": "de",
+    "author": "Bruce Lee",
+    "text": "Ich fürchte nicht den Mann, der 10.000 Tritte geübt hat, sondern den Mann, der einen Kick 10.000 Mal geübt hat."
+  },
+  {
+    "id": 35,
+    "language_code": "de",
+    "author": "Dale Carnegie",
+    "text": "Erfolg ist, was du bekommst, wenn du das tust, was andere nicht tun wollen."
+  },
+  {
+    "id": 36,
+    "language_code": "de",
+    "author": "Ziad K. Abdelnour",
+    "text": "Das Leben ist zu kurz, um unglücklich zu sein. Du musst das Beste daraus machen."
+  },
+  {
+    "id": 37,
+    "language_code": "de",
+    "author": "Buddha",
+    "text": "Der Geist ist alles. Was du denkst, wirst du."
+  },
+  {
+    "id": 38,
+    "language_code": "de",
+    "author": "Helen Keller",
+    "text": "Das Leben ist entweder ein gewagtes Abenteuer oder gar nichts."
+  },
+  {
+    "id": 39,
+    "language_code": "de",
+    "author": "Vincent van Gogh",
+    "text": "Große Dinge werden nicht durch Kraft, sondern durch Ausdauer erreicht."
+  },
+  {
+    "id": 40,
+    "language_code": "de",
+    "author": "Abraham Lincoln",
+    "text": "Die beste Möglichkeit, die Zukunft vorherzusagen, besteht darin, sie zu schaffen."
+  },
+  {
+    "id": 41,
+    "language_code": "de",
+    "author": "Confucius",
+    "text": "Unsere größte Schwäche liegt im Aufgeben. Der sicherste Weg zum Erfolg ist immer, es noch einmal zu versuchen."
+  },
+  {
+    "id": 42,
+    "language_code": "de",
+    "author": "Walt Disney",
+    "text": "Erfolg bedeutet, dass du alles tust, was du tun kannst, an jedem einzelnen Tag."
+  },
+  {
+    "id": 43,
+    "language_code": "de",
+    "author": "Michael Phelps",
+    "text": "Du kannst nicht erwarten, dass du gewinnst, wenn du nicht alles gibst."
+  },
+  {
+    "id": 44,
+    "language_code": "de",
+    "author": "Muhammad Ali",
+    "text": "Don’t count the days, make the days count."
+  },
+  {
+    "id": 45,
+    "language_code": "de",
+    "author": "Eleanor Roosevelt",
+    "text": "Die Zukunft gehört denen, die an die Wahrhaftigkeit ihrer Träume glauben."
+  },
+  {
+    "id": 46,
+    "language_code": "de",
+    "author": "George Bernard Shaw",
+    "text": "Das Leben wird nicht gemessen an der Anzahl der Atemzüge, sondern an den Momenten, die uns den Atem rauben."
+  },
+  {
+    "id": 47,
+    "language_code": "de",
+    "author": "Les Brown",
+    "text": "Du musst bereit sein, die Dinge zu tun, die andere nicht tun wollen, um die Dinge zu haben, von denen andere nur träumen."
+  },
+  {
+    "id": 48,
+    "language_code": "de",
+    "author": "Napoleon Hill",
+    "text": "Denke zweimal, bevor du sprichst, denn deine Worte und Taten haben immense Kraft."
+  },
+  {
+    "id": 49,
+    "language_code": "de",
+    "author": "Coco Chanel",
+    "text": "Das Leben ist kurz, verschwende es nicht damit, das zu sein, was andere von dir erwarten."
+  },
+  {
+    "id": 50,
+    "language_code": "de",
+    "author": "John Wooden",
+    "text": "Dinge richtig zu tun, wenn niemand zuschaut, zeigt wahre Charakterstärke."
+  }
+]

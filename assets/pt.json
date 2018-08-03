@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "language_code": "pt",
+    "author": "Desconhecido",
+    "text": "Acredite em si mesmo e tudo será possível."
+  },
+  {
+    "id": 2,
+    "language_code": "pt",
+    "author": "Vince Lombardi",
+    "text": "O sucesso é conseguir o que você quer. Felicidade é querer o que você conseguiu."
+  },
+  {
+    "id": 3,
+    "language_code": "pt",
+    "author": "Zig Ziglar",
+    "text": "Você não tem que ser ótimo para começar, mas você tem que começar para ser grande."
+  },
+  {
+    "id": 4,
+    "language_code": "pt",
+    "author": "Les Brown",
+    "text": "Decida o que você quer. Decida o que está disposto a dar em troca."
+  },
+  {
+    "id": 5,
+    "language_code": "pt",
+    "author": "Albert Einstein",
+    "text": "A vida é como andar de bicicleta. Para manter o equilíbrio, você deve continuar se movendo."
+  },
+  {
+    "id": 6,
+    "language_code": "pt",
+    "author": "Napoleon Hill",
+    "text": "O homem que não tem um propósito a que dedicar a sua vida, está perdido."
+  },
+  {
+    "id": 7,
+    "language_code": "pt",
+    "author": "Confúcio",
+    "text": "Aquele que quer mover o mundo, deve primeiro mover a si mesmo."
+  },
+  {
+    "id": 8,
+    "language_code": "pt",
+    "author": "Ralph Waldo Emerson",
+    "text": "Não tenha medo de dar um grande passo. Você não pode atravessar um abismo com dois pulos."
+  },
+  {
+    "id": 9,
+    "language_code": "pt",
+    "author": "Thomas Edison",
+    "text": "Eu não falhei. Acabei de encontrar 10.000 maneiras que não funcionam."
+  },
+  {
+    "id": 10,
+    "language_code": "pt",
+    "author": "Arnold Schwarzenegger",
+    "text": "A força não vem do corpo. Vem da vontade da mente."
+  },
+  {
+    "id": 11,
+    "language_code": "pt",
+    "author": "Oprah Winfrey",
+    "text": "Você consegue fazer qualquer coisa, mas não consegue fazer tudo. Faça algo maravilhoso hoje."
+  },
+  {
+    "id": 12,
+    "language_code": "pt",
+    "author": "Henry Ford",
+    "text": "Quando tudo parece estar indo contra você, lembre-se que o avião decola contra o vento, não a favor dele."
+  },
+  {
+    "id": 13,
+    "language_code": "pt",
+    "author": "Jim Rohn",
+    "text": "Se você não gosta de como as coisas estão, mude! Você não é uma árvore."
+  },
+  {
+    "id": 14,
+    "language_code": "pt",
+    "author": "Steve Jobs",
+    "text": "A única maneira de fazer um excelente trabalho é amar o que você faz."
+  },
+  {
+    "id": 15,
+    "language_code": "pt",
+    "author": "Dalai Lama",
+    "text": "O objetivo da nossa vida é ser feliz."
+  },
+  {
+    "id": 16,
+    "language_code": "pt",
+    "author": "Will Smith",
+    "text": "Grandes coisas não acontecem da noite para o dia. Trabalhe duro, continue firme e nunca desista."
+  },
+  {
+    "id": 17,
+    "language_code": "pt",
+    "author": "Tony Robbins",
+    "text": "A única limitação para sua realização futura será sua dúvida atual quanto a alcançá-la."
+  },
+  {
+    "id": 18,
+    "language_code": "pt",
+    "author": "Winston Churchill",
+    "text": "O sucesso é ir de fracasso em fracasso sem perder o entusiasmo."
+  },
+  {
+    "id": 19,
+    "language_code": "pt",
+    "author": "Eleanor Roosevelt",
+    "text": "O futuro pertence àqueles que acreditam na beleza de seus sonhos."
+  },
+  {
+    "id": 20,
+    "language_code": "pt",
+    "author": "Confúcio",
+    "text": "Nossas maiores glórias não estão em nunca cair, mas sim em nos levantarmos cada vez que caímos."
+  },
+  {
+    "id": 21,
+    "language_code": "pt",
+    "author": "Viktor Frankl",
+    "text": "A busca do sentido é a principal motivação na vida humana."
+  },
+  {
+    "id": 22,
+    "language_code": "pt",
+    "author": "Nelson Mandela",
+    "text": "Eu nunca perco. Eu ganho ou aprendo."
+  },
+  {
+    "id": 23,
+    "language_code": "pt",
+    "author": "Les Brown",
+    "text": "O que você faz hoje pode melhorar todos os seus amanhãs."
+  },
+  {
+    "id": 24,
+    "language_code": "pt",
+    "author": "Coco Chanel",
+    "text": "A maneira de começar é parar de falar e começar a fazer."
+  },
+  {
+    "id": 25,
+    "language_code": "pt",
+    "author": "Walt Disney",
+    "text": "Se você pode sonhar, você pode fazer."
+  },
+  {
+    "id": 26,
+    "language_code": "pt",
+    "author": "Aristóteles",
+    "text": "A excelência não é um ato, mas um hábito."
+  },
+  {
+    "id": 27,
+    "language_code": "pt",
+    "author": "Bruce Lee",
+    "text": "Não tenha medo do fracasso. Tenha medo de não tentar."
+  },
+  {
+    "id": 28,
+    "language_code": "pt",
+    "author": "Paulo Coelho",
+    "text": "Quando você quer alguma coisa, todo o universo conspira para que você realize seu desejo."
+  },
+  {
+    "id": 29,
+    "language_code": "pt",
+    "author": "Michael Jordan",
+    "text": "Eu posso aceitar a falha, todos podem falhar em alguma coisa. Mas eu não posso aceitar não tentar."
+  },
+  {
+    "id": 30,
+    "language_code": "pt",
+    "author": "Abraham Lincoln",
+    "text": "A melhor maneira de prever o futuro é criá-lo."
+  },
+  {
+    "id": 31,
+    "language_code": "pt",
+    "author": "Dale Carnegie",
+    "text": "Desenvolva o sucesso a partir das falhas. O desânimo e o fracasso são dois dos degraus mais seguros para o sucesso."
+  },
+  {
+    "id": 32,
+    "language_code": "pt",
+    "author": "Jim Carrey",
+    "text": "Você pode falhar no que você não gosta, então você pode muito bem fazer o que você ama."
+  },
+  {
+    "id": 33,
+    "language_code": "pt",
+    "author": "Napoleon Bonaparte",
+    "text": "A vitória pertence ao mais perseverante."
+  },
+  {
+    "id": 34,
+    "language_code": "pt",
+    "author": "C.S. Lewis",
+    "text": "Você não pode voltar atrás e mudar o começo, mas pode começar onde está e mudar o final."
+  },
+  {
+    "id": 35,
+    "language_code": "pt",
+    "author": "Vincent van Gogh",
+    "text": "Grandes coisas não são feitas por impulso, mas por uma série de pequenas coisas reunidas."
+  },
+  {
+    "id": 36,
+    "language_code": "pt",
+    "author": "George Eliot",
+    "text": "É nunca tarde demais para ser o que você poderia ter sido."
+  },
+  {
+    "id": 37,
+    "language_code": "pt",
+    "author": "Muhammad Ali",
+    "text": "Aquele que não é corajoso o suficiente para correr riscos, não realizará nada na vida."
+  },
+  {
+    "id": 38,
+    "language_code": "pt",
+    "author": "J.K. Rowling",
+    "text": "As falhas são inevitáveis, mas o fracasso é opcional."
+  },
+  {
+    "id": 39,
+    "language_code": "pt",
+    "author": "Barack Obama",
+    "text": "O caminho mais difícil geralmente leva ao lugar mais bonito."
+  },
+  {
+    "id": 40,
+    "language_code": "pt",
+    "author": "Platão",
+    "text": "O primeiro e o melhor de todos os vitóriosos é aquele que vence a si mesmo."
+  },
+  {
+    "id": 41,
+    "language_code": "pt",
+    "author": "Robin Sharma",
+    "text": "Sucesso não é o chave para a felicidade. Felicidade é a chave para o sucesso. Se você ama o que faz, você será bem sucedido."
+  },
+  {
+    "id": 42,
+    "language_code": "pt",
+    "author": "John C. Maxwell",
+    "text": "Um homem deve ser grande em seus próprios olhos antes de ser grande aos olhos dos outros."
+  },
+  {
+    "id": 43,
+    "language_code": "pt",
+    "author": "Coco Chanel",
+    "text": "A vida é muito curta para se vestir com tédio."
+  },
+  {
+    "id": 44,
+    "language_code": "pt",
+    "author": "Mark Twain",
+    "text": "Os dois dias mais importantes da sua vida são o dia em que você nasceu e o dia em que você descobre por que."
+  },
+  {
+    "id": 45,
+    "language_code": "pt",
+    "author": "Bruce Springsteen",
+    "text": "Você não consegue ter medo do fracasso e do sucesso ao mesmo tempo. Eles saem pela mesma porta."
+  },
+  {
+    "id": 46,
+    "language_code": "pt",
+    "author": "Rumi",
+    "text": "O que você procura está procurando por você."
+  },
+  {
+    "id": 47,
+    "language_code": "pt",
+    "author": "Tom Brady",
+    "text": "Você tem que acreditar no seu processo. Você tem que acreditar no resultado, independentemente de como as coisas estejam."
+  },
+  {
+    "id": 48,
+    "language_code": "pt",
+    "author": "Maya Angelou",
+    "text": "Você é o autor da sua própria história. Faça dela uma boa história."
+  },
+  {
+    "id": 49,
+    "language_code": "pt",
+    "author": "Ralph Waldo Emerson",
+    "text": "O que está por trás de nós e o que está diante de nós são pequenos assuntos comparados com o que está dentro de nós."
+  },
+  {
+    "id": 50,
+    "language_code": "pt",
+    "author": "Confúcio",
+    "text": "A única maneira de atingir o impossível é acreditar que é possível."
+  }
+]
