@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class CreateCountDownPage extends StatefulWidget {
@@ -7,15 +10,15 @@ class CreateCountDownPage extends StatefulWidget {
 }
 
 class _CreateCountDownPageState extends State<CreateCountDownPage> {
-  String title = '';
+  String? itemsString;
   DateTime? selectedDate;
 
   Future<void> _selectDate() async {
     final DateTime? picked = await showDatePicker(
       context: context,
       initialDate: DateTime.now(),
-      firstDate: DateTime(2022),
-      lastDate: DateTime(2025),
+      firstDate: DateTime.now(),
+      lastDate: DateTime(2050),
     );
 
     if (picked != null && picked != selectedDate) {
@@ -25,34 +28,29 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
     }
   }
 
-  final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
-
-  Future<void> _incrementCounter() async {
-    final SharedPreferences prefs = await _prefs;
-    final int counter = (prefs.getInt('counter') ?? 0) + 1;
-    print("counter: " + counter.toString());
-    setState(() {
-      Future<int> _counter =
-          prefs.setInt('counter', counter).then((bool success) {
-        return counter;
-      });
-      print("_counter: " + _counter.toString());
-    });
+  getStringTitle() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    //Return String
+    itemsString = prefs.getString('items') ?? '[]';
   }
 
   @override
   void initState() {
-    super.initState();
-    _counter = _prefs.then((SharedPreferences prefs) {
-      return prefs.getInt('counter') ?? 0;
-    });
+    // TODO: implement initState
+    getStringTitle();
+  }
+
+  Future<void> readJson() async {
+    final String response = await rootBundle.loadString('assets/db.json');
+    final data = await json.decode(response);
+    setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Create Countdown'),
+        title: Text('Create Countdown '),
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
@@ -60,11 +58,7 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             TextField(
-              onChanged: (value) {
-                setState(() {
-                  title = value;
-                });
-              },
+              onChanged: (value) {},
               decoration: InputDecoration(
                 labelText: 'Title',
               ),
@@ -78,12 +72,14 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
             ),
             SizedBox(height: 16.0),
             ElevatedButton(
-              onPressed: () {
-                _incrementCounter();
-                print(_counter);
+              onPressed: () async {
+                SharedPreferences prefs = await SharedPreferences.getInstance();
+                prefs.setString('items', 'value');
+
+                Navigator.pop(context);
               },
               child: Text(
-                'Save' + _counter.toString() + " .",
+                'Save',
               ),
             )
           ],
