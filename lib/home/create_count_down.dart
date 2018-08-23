@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:countdown/constants/app_const.dart';
+import 'package:countdown/models/data_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -11,7 +13,9 @@ class CreateCountDownPage extends StatefulWidget {
 
 class _CreateCountDownPageState extends State<CreateCountDownPage> {
   String? itemsString;
+  List<DataModel>? itemDataModelList = [];
   DateTime? selectedDate;
+  DataModel? dataModel = DataModel();
 
   Future<void> _selectDate() async {
     final DateTime? picked = await showDatePicker(
@@ -24,6 +28,7 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
     if (picked != null && picked != selectedDate) {
       setState(() {
         selectedDate = picked;
+        dataModel?.date = selectedDate!.toIso8601String();
       });
     }
   }
@@ -32,18 +37,17 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     //Return String
     itemsString = prefs.getString('items') ?? '[]';
+    if (itemsString != null) {
+      final data = await json.decode(itemsString!);
+      itemDataModelList =
+          data.map((e) => DataModel.fromJson(e)).toList().cast<DataModel>();
+    }
+//!     prefs.clear();//! temizler
   }
 
   @override
   void initState() {
-    // TODO: implement initState
     getStringTitle();
-  }
-
-  Future<void> readJson() async {
-    final String response = await rootBundle.loadString('assets/db.json');
-    final data = await json.decode(response);
-    setState(() {});
   }
 
   @override
@@ -57,8 +61,33 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            ...itemDataModelList!
+                .map((e) => Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                            borderRadius: kBigBorderRadius,
+                            color: Colors.deepPurple),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            children: [
+                              Text(e.title!),
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Spacer(),
+                              Text(e.date!.substring(0, 10)),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ))
+                .toList(),
             TextField(
-              onChanged: (value) {},
+              onChanged: (value) {
+                dataModel!.title = value;
+              },
               decoration: InputDecoration(
                 labelText: 'Title',
               ),
@@ -73,10 +102,11 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
             SizedBox(height: 16.0),
             ElevatedButton(
               onPressed: () async {
+                itemDataModelList!.add(dataModel!);
                 SharedPreferences prefs = await SharedPreferences.getInstance();
-                prefs.setString('items', 'value');
-
-                Navigator.pop(context);
+                String _temp = jsonEncode(itemDataModelList);
+                prefs.setString('items', _temp);
+                setState(() {});
               },
               child: Text(
                 'Save',
