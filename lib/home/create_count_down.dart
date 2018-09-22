@@ -1,7 +1,9 @@
 import 'dart:convert';
 
 import 'package:countdown/constants/app_const.dart';
-import 'package:countdown/models/data_model.dart';
+import 'package:countdown/controllers/note_controller.dart';
+import 'package:countdown/models/db.dart';
+import 'package:countdown/widgets/custom_shimmer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -13,9 +15,10 @@ class CreateCountDownPage extends StatefulWidget {
 
 class _CreateCountDownPageState extends State<CreateCountDownPage> {
   String? itemsString;
-  List<DataModel>? itemDataModelList = [];
+  List<DB>? itemDBModelList = [];
   DateTime? selectedDate;
-  DataModel? dataModel = DataModel();
+  DB? dbModel = DB();
+  final NoteController? noteController = NoteController();
 
   Future<void> _selectDate() async {
     final DateTime? picked = await showDatePicker(
@@ -26,28 +29,24 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
     );
 
     if (picked != null && picked != selectedDate) {
-      setState(() {
-        selectedDate = picked;
-        dataModel?.date = selectedDate!.toIso8601String();
-      });
+      selectedDate = picked;
+      dbModel?.date = selectedDate!.toIso8601String();
+      setState(() {});
     }
-  }
-
-  getStringTitle() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    //Return String
-    itemsString = prefs.getString('items') ?? '[]';
-    if (itemsString != null) {
-      final data = await json.decode(itemsString!);
-      itemDataModelList =
-          data.map((e) => DataModel.fromJson(e)).toList().cast<DataModel>();
-    }
-//!     prefs.clear();//! temizler
   }
 
   @override
   void initState() {
-    getStringTitle();
+    getNoteList();
+  }
+
+  Future<void> getNoteList() async {
+    itemDBModelList = noteController!.getNotes() as List<DB>?;
+    print(itemDBModelList!.length);
+  }
+
+  Future<void> addNote(DB note) async {
+    noteController!.addNote(note);
   }
 
   @override
@@ -61,7 +60,7 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            ...itemDataModelList!
+            ...itemDBModelList!
                 .map((e) => Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
@@ -86,7 +85,9 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
                 .toList(),
             TextField(
               onChanged: (value) {
-                dataModel!.title = value;
+                dbModel!.title = value;
+
+                dbModel!.title = value;
               },
               decoration: InputDecoration(
                 labelText: 'Title',
@@ -100,18 +101,17 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
                   : 'Selected Date: ${selectedDate.toString()}'),
             ),
             SizedBox(height: 16.0),
-            ElevatedButton(
-              onPressed: () async {
-                itemDataModelList!.add(dataModel!);
-                SharedPreferences prefs = await SharedPreferences.getInstance();
-                String _temp = jsonEncode(itemDataModelList);
-                prefs.setString('items', _temp);
-                setState(() {});
-              },
-              child: Text(
-                'Save',
-              ),
-            )
+            dbModel == null
+                ? SizedBox()
+                : ElevatedButton(
+                    onPressed: () async {
+                      addNote(dbModel!);
+                      setState(() {});
+                    },
+                    child: Text(
+                      'Save',
+                    ),
+                  )
           ],
         ),
       ),

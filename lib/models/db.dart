@@ -1,10 +1,17 @@
-class DataModel {
+import 'package:hive/hive.dart';
+
+part 'db.g.dart';
+
+@HiveType(typeId: 0)
+class DB {
+  @HiveField(0)
   String? title;
+  @HiveField(1)
   String? date;
 
-  DataModel({this.title, this.date});
+  DB({this.title, this.date});
 
-  DataModel.fromJson(Map<String, dynamic> json) {
+  DB.fromJson(Map<String, dynamic> json) {
     title = json['title'];
     date = json['date'];
   }

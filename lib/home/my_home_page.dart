@@ -53,16 +53,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
     Size screenSize = MediaQuery.of(context).size;
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: kPrimaryColor,
-        title: Text(
-          'My Exam Page',
-          style: Theme.of(context)
-              .textTheme
-              .titleLarge
-              ?.copyWith(color: Colors.white),
-        ),
-      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton(
         backgroundColor: kPrimaryColor,
@@ -85,6 +75,17 @@ class _MyHomePageState extends State<MyHomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
+              SizedBox(
+                height: screenSize.height * 0.2,
+                child: Center(
+                  child: Text(
+                    "MyCountdown",
+                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                  ),
+                ),
+              ),
               Row(
                 children: [
                   Spacer(),
@@ -193,11 +194,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Column(
                   children: [
                     Text(
-                      "\"${motivationModelList?[days % 50].text ?? 'Loading...'}\"",
+                      "\"${motivationModelList?[days % 49].text ?? 'Loading...'}\"",
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(height: screenSize.height * 0.03),
-                    Text(motivationModelList?[days % 50].author ?? ''),
+                    Text(motivationModelList?[days % 49].author ?? ''),
                   ],
                 ),
               ),

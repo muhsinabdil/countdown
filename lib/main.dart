@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'hive_injector.dart';
 import 'home/my_home_page.dart';
 
-void main() {
+Future<void> main() async {
+  await HiveInjector.setup();
   runApp(const MyApp());
 }
 
