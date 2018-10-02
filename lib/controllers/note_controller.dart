@@ -1,4 +1,4 @@
-import 'package:countdown/models/db.dart';
+import 'package:countdown/models/data_model.dart';
 
 import '../services/store.dart';
 
@@ -9,20 +9,27 @@ class NoteController {
     store = Store();
   }
 
-  Future<List<DB>?> getNotes() async =>
-      List<DB>.from(await store.getValue(Store.notes));
+  Future<List<DBModel>?> getNotes() async {
+    var data = await store.getValue(Store.notes);
 
-  Future<void> addNote(DB db) async {
-    final List<DB> notes =
-        List<DB>.from(await store.getValue(Store.notes) ?? []);
-    notes.add(db);
-    await store.setValue(Store.notes, notes);
+    if (data != null) {
+      return List<DBModel>.from(data);
+    }
+
+    return null;
   }
 
-  Future<void> deleteNote(DB db) async {
-    final List<DB> notes =
-        List<DB>.from(await store.getValue(Store.notes) ?? []);
+  Future<void> addNote(DBModel db) async {
+    final List<DBModel> notes =
+        List<DBModel>.from(await store.getValue(Store.notes) ?? []);
+    notes.add(db);
+    await store.setValue(Store.notes, value: notes);
+  }
+
+  Future<void> deleteNote(DBModel db) async {
+    final List<DBModel> notes =
+        List<DBModel>.from(await store.getValue(Store.notes) ?? []);
     notes.remove(db);
-    await store.setValue(Store.notes, notes);
+    await store.setValue(Store.notes, value: notes);
   }
 }

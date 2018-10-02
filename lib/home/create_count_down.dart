@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:countdown/constants/app_const.dart';
 import 'package:countdown/controllers/note_controller.dart';
-import 'package:countdown/models/db.dart';
+import 'package:countdown/models/data_model.dart';
 import 'package:countdown/widgets/custom_shimmer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -15,9 +15,9 @@ class CreateCountDownPage extends StatefulWidget {
 
 class _CreateCountDownPageState extends State<CreateCountDownPage> {
   String? itemsString;
-  List<DB>? itemDBModelList = [];
+  List<DBModel>? itemDBModelList = [];
   DateTime? selectedDate;
-  DB? dbModel = DB();
+  DBModel? dbModel = DBModel();
   final NoteController? noteController = NoteController();
 
   Future<void> _selectDate() async {
@@ -41,11 +41,15 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
   }
 
   Future<void> getNoteList() async {
-    itemDBModelList = noteController!.getNotes() as List<DB>?;
-    print(itemDBModelList!.length);
+    var data = noteController!.getNotes();
+    if (data != null) {
+      setState(() {
+        itemDBModelList = data as List<DBModel>?;
+      });
+    }
   }
 
-  Future<void> addNote(DB note) async {
+  Future<void> addNote(DBModel note) async {
     noteController!.addNote(note);
   }
 

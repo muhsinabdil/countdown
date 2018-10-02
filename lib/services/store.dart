@@ -1,4 +1,4 @@
-import 'package:countdown/models/db.dart';
+import 'package:countdown/models/data_model.dart';
 import 'package:hive/hive.dart';
 
 class Store {
@@ -15,7 +15,7 @@ class Store {
         defaultValue: defaultValue,
       );
 
-  Future<void> setValue<T>(Object key, List<DB> notes, {T? value}) async =>
+  Future<void> setValue<T>(Object key, {T? value}) async =>
       await _box.put(key, value);
 
   Future<void> deleteValue<T>(Object key, {T? value}) async =>
