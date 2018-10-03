@@ -1,4 +1,6 @@
+import 'package:countdown/database/hive_data_model_mixin.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:uuid/uuid.dart';
 
 import '../database/hive_types.dart';
 part 'data_model.g.dart';
@@ -6,7 +8,7 @@ part 'data_model.g.dart';
 @HiveType(
     typeId: HiveTypes
         .dataModelId) //! DataModel için typeId belirledik bu HiveTypes clasında elle yazdık yeni bir model için orada yine belirlemek gerek
-class DataModel {
+class DataModel with HiveDataModelMixin {
   @HiveField(0)
   int? id;
   @HiveField(1)
@@ -17,6 +19,14 @@ class DataModel {
   bool? isComplete;
 
   DataModel({this.id, this.title, this.date, this.isComplete});
+
+//! burası hive data model mixinden geliyor
+  @override
+  // TODO: implement key
+  String get key {
+    var uuid = Uuid().toString();
+    return uuid;
+  }
 
   DataModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
