@@ -6,11 +6,18 @@ import 'package:hive_flutter/hive_flutter.dart';
 mixin HiveManagerMixin<T> {
   final String _key = T.toString(); //! sonradan gizledik
 
-//!bu yapı her operation için bu olacağı için buraya aldık
+//!bu yapılar her operation için bu olacağı için buraya aldık
   late Box<T> box;
   Future<void> start() async {
-    box = await Hive.openBox<T>(_key); //! bu key mixin ile oluşuyor 
+    box = await Hive.openBox<T>(_key); //! bu key mixin ile oluşuyor
   }
 
+  Future<void> stop() async {
+    await box.close();
+  }
+
+  Future<void> clear() async {
+    await box.clear();
+  }
   //!
 }
