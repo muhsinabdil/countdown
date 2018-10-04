@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 abstract class IDatabaseManager {
-  Future<void> start(); //!fonksiyon isimleri keyfen girilebilir
+  Future<void> setup(); //!fonksiyon isimleri keyfen girilebilir
   Future<void> clear();
 }
 
 @immutable //! Sınıf değişmezdir, yani özellikleri değişemez; tüm özellikler nihai olmalıdır.
 final class DatabaseManager implements IDatabaseManager {
   @override
-  Future<void> start() async {
+  Future<void> setup() async {
     await _open();
     final DatabaseManager databaseManager = DatabaseManager();
     databaseManager._initialOperation();
