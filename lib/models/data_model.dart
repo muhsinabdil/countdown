@@ -22,7 +22,7 @@ class DataModel with HiveModelMixin {
 
 //! burası hive  model mixinden geliyor
   @override
-  // TODO: implement key
+  //! model uniq key
   String get key {
     var uuid = Uuid().toString();
     return uuid;

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'hive_injector.dart';
+import 'database/hive_database_manager.dart';
+
 import 'home/my_home_page.dart';
 
 Future<void> main() async {
-  await HiveInjector.setup();
+  await HiveDatabaseManager().setup();
   runApp(const MyApp());
 }
 

@@ -1,12 +1,7 @@
-import 'dart:convert';
-
 import 'package:countdown/constants/app_const.dart';
-import 'package:countdown/controllers/note_controller.dart';
+import 'package:countdown/database/data_model_hive_operation.dart';
 import 'package:countdown/models/data_model.dart';
-import 'package:countdown/widgets/custom_shimmer.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class CreateCountDownPage extends StatefulWidget {
   @override
@@ -15,10 +10,15 @@ class CreateCountDownPage extends StatefulWidget {
 
 class _CreateCountDownPageState extends State<CreateCountDownPage> {
   String? itemsString;
-  List<DBModel>? itemDBModelList = [];
+  List<DataModel>? itemDBModelList = [];
   DateTime? selectedDate;
-  DBModel? dbModel = DBModel();
-  final NoteController? noteController = NoteController();
+  DataModel? dbModel = DataModel();
+  final DataModelHiveOperation _dataModelHiveOperation =
+      DataModelHiveOperation();
+
+  void initDatabase() {
+    _dataModelHiveOperation.start();
+  }
 
   Future<void> _selectDate() async {
     final DateTime? picked = await showDatePicker(
@@ -36,21 +36,15 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
   }
 
   @override
-  void initState() {
-    getNoteList();
-  }
+  void initState() {}
 
-  Future<void> getNoteList() async {
-    var data = noteController!.getNotes();
-    if (data != null) {
-      setState(() {
-        itemDBModelList = data as List<DBModel>?;
-      });
-    }
-  }
-
-  Future<void> addNote(DBModel note) async {
-    noteController!.addNote(note);
+  Future<void> add() async {
+    var data = _dataModelHiveOperation!.addOrUpdateItem(
+      DataModel(
+        title: dbModel!.title,
+        date: dbModel!.date,
+      ),
+    );
   }
 
   @override
@@ -109,7 +103,6 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
                 ? SizedBox()
                 : ElevatedButton(
                     onPressed: () async {
-                      addNote(dbModel!);
                       setState(() {});
                     },
                     child: Text(

@@ -9,11 +9,11 @@ abstract class IDatabaseManager {
 }
 
 @immutable //! Sınıf değişmezdir, yani özellikleri değişemez; tüm özellikler nihai olmalıdır.
-final class DatabaseManager implements IDatabaseManager {
+final class HiveDatabaseManager implements IDatabaseManager {
   @override
   Future<void> setup() async {
     await _open();
-    final DatabaseManager databaseManager = DatabaseManager();
+    final HiveDatabaseManager databaseManager = HiveDatabaseManager();
     databaseManager._initialOperation();
   }
 
