@@ -10,15 +10,13 @@ part 'data_model.g.dart';
         .dataModelId) //! DataModel için typeId belirledik bu HiveTypes clasında elle yazdık yeni bir model için orada yine belirlemek gerek
 class DataModel with HiveModelMixin {
   @HiveField(0)
-  int? id;
-  @HiveField(1)
   String? title;
-  @HiveField(2)
+  @HiveField(1)
   String? date;
-  @HiveField(3)
+  @HiveField(2)
   bool? isComplete;
 
-  DataModel({this.id, this.title, this.date, this.isComplete});
+  DataModel({this.title, this.date, this.isComplete});
 
 //! burası hive  model mixinden geliyor
   @override
@@ -28,8 +26,15 @@ class DataModel with HiveModelMixin {
     return uuid;
   }
 
+  @override
+  int get id => this.id;
+
+  @override
+  set id(int value) {
+    this.id = value;
+  }
+
   DataModel.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
     title = json['title'];
     date = json['date'];
     isComplete = json['isComplete'];
@@ -37,7 +42,7 @@ class DataModel with HiveModelMixin {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
+
     data['title'] = this.title;
     data['date'] = this.date;
     data['isComplete'] = this.isComplete;

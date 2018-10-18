@@ -35,9 +35,6 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
     }
   }
 
-  @override
-  void initState() {}
-
   Future<void> add() async {
     var data = _dataModelHiveOperation!.addOrUpdateItem(
       DataModel(

@@ -21,6 +21,10 @@ class HiveDatabaseOperation<T extends HiveModelMixin> with HiveManagerMixin<T> {
 
 //! add ve update aynı yapıda olduğu için birleştirdik
   Future<void> addOrUpdateItem(T model) async {
+    if (model.id == null) {
+      model.id = getMaxId();
+    }
+
     await box.put(model.key,
         model); //! T type HiveModelMixin Olduğu için modelde key geliyor
   }
@@ -33,4 +37,14 @@ class HiveDatabaseOperation<T extends HiveModelMixin> with HiveManagerMixin<T> {
 
   Future<void> deleteItem(T model) => box.delete(
       model); //! bu şekilde de tek satır yazarsak async ve await olamayabilir
+
+  List<T> getAll() {
+    return box.values.toList();
+  }
+
+  int getMaxId() {
+    List<T> sortedList = box.values.toList();
+    sortedList.sort((a, b) => b.id.compareTo(a.id));
+    return (sortedList.isNotEmpty ? sortedList.first.id : 0) + 1;
+  }
 }
