@@ -15,8 +15,10 @@ class DataModel with HiveModelMixin {
   String? date;
   @HiveField(2)
   bool? isComplete;
+  @HiveField(3)
+  bool? isActive;
 
-  DataModel({this.title, this.date, this.isComplete});
+  DataModel({this.title, this.date, this.isComplete, this.isActive});
 
 //! burası hive  model mixinden geliyor
   @override
@@ -38,6 +40,7 @@ class DataModel with HiveModelMixin {
     title = json['title'];
     date = json['date'];
     isComplete = json['isComplete'];
+    isActive = json['isActive'];
   }
 
   Map<String, dynamic> toJson() {
@@ -46,6 +49,7 @@ class DataModel with HiveModelMixin {
     data['title'] = this.title;
     data['date'] = this.date;
     data['isComplete'] = this.isComplete;
+    data['isActive'] = this.isActive;
     return data;
   }
 }

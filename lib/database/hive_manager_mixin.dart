@@ -9,6 +9,7 @@ mixin HiveManagerMixin<T> {
 //!bu yapılar her operation için bu olacağı için buraya aldık
   late Box<T> box;
   Future<void> start() async {
+    if (Hive.isBoxOpen(_key)) return; //! açıksa tekrar açmayacak
     box = await Hive.openBox<T>(_key); //! bu key mixin ile oluşuyor
   }
 

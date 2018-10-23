@@ -39,7 +39,9 @@ class HiveDatabaseOperation<T extends HiveModelMixin> with HiveManagerMixin<T> {
       model); //! bu şekilde de tek satır yazarsak async ve await olamayabilir
 
   List<T> getAll() {
-    return box.values.toList();
+    var item = box.values.toList();
+    print(item);
+    return item;
   }
 
   int getMaxId() {

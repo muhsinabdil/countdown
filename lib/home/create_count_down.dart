@@ -20,6 +20,12 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
     _dataModelHiveOperation.start();
   }
 
+  @override
+  void initState() {
+    super.initState();
+    _getAll();
+  }
+
   Future<void> _selectDate() async {
     final DateTime? picked = await showDatePicker(
       context: context,
@@ -35,13 +41,9 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
     }
   }
 
-  Future<void> add() async {
-    var data = _dataModelHiveOperation!.addOrUpdateItem(
-      DataModel(
-        title: dbModel!.title,
-        date: dbModel!.date,
-      ),
-    );
+  Future<void> _getAll() async {
+    itemDBModelList = _dataModelHiveOperation.getAll();
+    setState(() {});
   }
 
   @override
@@ -100,6 +102,7 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
                 ? SizedBox()
                 : ElevatedButton(
                     onPressed: () async {
+                      _dataModelHiveOperation.addOrUpdateItem(dbModel!);
                       setState(() {});
                     },
                     child: Text(

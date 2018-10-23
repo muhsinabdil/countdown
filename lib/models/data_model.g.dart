@@ -20,19 +20,22 @@ class DataModelAdapter extends TypeAdapter<DataModel> {
       title: fields[0] as String?,
       date: fields[1] as String?,
       isComplete: fields[2] as bool?,
+      isActive: fields[3] as bool?,
     );
   }
 
   @override
   void write(BinaryWriter writer, DataModel obj) {
     writer
-      ..writeByte(3)
+      ..writeByte(4)
       ..writeByte(0)
       ..write(obj.title)
       ..writeByte(1)
       ..write(obj.date)
       ..writeByte(2)
-      ..write(obj.isComplete);
+      ..write(obj.isComplete)
+      ..writeByte(3)
+      ..write(obj.isActive);
   }
 
   @override
