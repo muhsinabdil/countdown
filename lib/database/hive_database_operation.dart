@@ -1,6 +1,9 @@
-import 'package:countdown/database/hive_manager_mixin.dart';
-import 'package:countdown/database/hive_model_mixin.dart';
-import 'package:hive/hive.dart';
+
+import 'package:hive_flutter/hive_flutter.dart';
+
+import 'hive_model_mixin.dart';
+
+part 'hive_manager_mixin.dart';
 
 //! T type hivemodelmixin tipinde dediğimizde bunun key gücü var bunu biliyoruz
 class HiveDatabaseOperation<T extends HiveModelMixin> with HiveManagerMixin<T> {
@@ -25,27 +28,27 @@ class HiveDatabaseOperation<T extends HiveModelMixin> with HiveManagerMixin<T> {
       model.id = getMaxId();
     }
 
-    await box.put(model.key,
+    await _box.put(model.key,
         model); //! T type HiveModelMixin Olduğu için modelde key geliyor
   }
 
   T? getItem(String key) {
     //! T? tipi null olabilir demek
     //! kayıt boş dönebilir ama bunu kayıt esansında boş olmasını önlersek sıkıntı olmaz dolu olur.
-    return box.get(key);
+    return _box.get(key);
   }
 
-  Future<void> deleteItem(T model) => box.delete(
+  Future<void> deleteItem(T model) => _box.delete(
       model); //! bu şekilde de tek satır yazarsak async ve await olamayabilir
 
   List<T> getAll() {
-    var item = box.values.toList();
+    var item = _box.values.toList();
     print(item);
     return item;
   }
 
   int getMaxId() {
-    List<T> sortedList = box.values.toList();
+    List<T> sortedList = _box.values.toList();
     sortedList.sort((a, b) => b.id.compareTo(a.id));
     return (sortedList.isNotEmpty ? sortedList.first.id : 0) + 1;
   }
