@@ -1,16 +1,33 @@
-# countdown
+# Countdown Uygulaması
 
-A new Flutter project.
+Bu proje, Flutter'da geri sayım mobil uygulamasıdır. Aşağıda uygulamanın özelliklerini bulabilirsiniz.
 
-## Getting Started
+## Özellikler
 
-This project is a starting point for a Flutter application.
+- Eğer herhangi bir kayıt yoksa, istenilen başlık ve tarih ekleyebilirsiniz.
+- Eğer kayıt varsa, kayıtlar arasında bir tarih aktif edebilir ve yeni kayıt ekleyebilirsiniz.
 
-A few resources to get you started if this is your first Flutter project:
+## Kurulum
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Projeyi klonlayın: `git clone https://github.com/kullanici_adi/proje.git`
+2. Proje dizinine gidin: `cd proje`
+3. Gerekli bağımlılıkları yükleyin: `flutter pub get`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Kullanım
+
+1. Uygulamayı başlatın: `flutter run`
+2. Uygulama emülatörde veya fiziksel cihazda çalışacaktır.
+3. İstenilen başlık ve tarihi girin veya mevcut kayıtlar arasından bir tarih seçin.
+4. Kayıtlar arasında bir tarih aktif etmek veya yeni kayıt eklemek için uygun düğmelere tıklayın.
+
+## Katkıda Bulunma
+
+1. Bu projeyi fork edin.
+2. Yeni bir branch oluşturun: `git checkout -b yeni-ozellik`
+3. Değişikliklerinizi yapın ve commit edin: `git commit -am 'Yeni özellik: Açıklama'`
+4. Branch'inizi push edin: `git push origin yeni-ozellik`
+5. Pull request oluşturun.
+
+## Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasını inceleyebilirsiniz.
