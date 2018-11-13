@@ -1,9 +1,9 @@
-
 import 'package:hive_flutter/hive_flutter.dart';
 
+import '../models/data_model.dart';
 import 'hive_model_mixin.dart';
 
-part 'hive_manager_mixin.dart';
+part './hive_manager_mixin.dart';
 
 //! T type hivemodelmixin tipinde dediğimizde bunun key gücü var bunu biliyoruz
 class HiveDatabaseOperation<T extends HiveModelMixin> with HiveManagerMixin<T> {
@@ -24,10 +24,6 @@ class HiveDatabaseOperation<T extends HiveModelMixin> with HiveManagerMixin<T> {
 
 //! add ve update aynı yapıda olduğu için birleştirdik
   Future<void> addOrUpdateItem(T model) async {
-    if (model.id == null) {
-      model.id = getMaxId();
-    }
-
     await _box.put(model.key,
         model); //! T type HiveModelMixin Olduğu için modelde key geliyor
   }
@@ -41,8 +37,9 @@ class HiveDatabaseOperation<T extends HiveModelMixin> with HiveManagerMixin<T> {
   Future<void> deleteItem(T model) => _box.delete(
       model); //! bu şekilde de tek satır yazarsak async ve await olamayabilir
 
-  List<T> getAll() {
-    var item = _box.values.toList();
+  Future<List<T>> getAll() async {
+    var item = await _box.values.toList();
+
     print(item);
     return item;
   }

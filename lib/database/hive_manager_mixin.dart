@@ -1,4 +1,4 @@
-part of 'hive_database_operation.dart'; //! box sı görmesinler diye yaptık diğer classlardan görünürse yapı bozulabilir
+part of './hive_database_operation.dart'; //! box sı görmesinler diye yaptık diğer classlardan görünürse yapı bozulabilir
 
 ///!  her classa gidip key atmak yerine her classın ismini key alıyoruz
 ///!  bu mixin ile hive modelin gücünü kullanarak key alıyoruz

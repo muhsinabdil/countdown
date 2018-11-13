@@ -24,8 +24,8 @@ class DataModel with HiveModelMixin {
   @override
   //! model uniq key
   String get key {
-    var uuid = Uuid().toString();
-    return uuid;
+    var uuid = Uuid();
+    return uuid.v1();
   }
 
   @override

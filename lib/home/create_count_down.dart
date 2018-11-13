@@ -2,6 +2,7 @@ import 'package:countdown/constants/app_const.dart';
 import 'package:countdown/database/data_model_hive_operation.dart';
 import 'package:countdown/models/data_model.dart';
 import 'package:flutter/material.dart';
+import 'package:hive/hive.dart';
 
 class CreateCountDownPage extends StatefulWidget {
   @override
@@ -14,15 +15,14 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
   DateTime? selectedDate;
   DataModel? dbModel = DataModel();
   final DataModelHiveOperation _dataModelHiveOperation =
-      DataModelHiveOperation();
+      DataModelHiveOperation(); //! database operations
 
-  void initDatabase() {
-    _dataModelHiveOperation.start();
-  }
+
 
   @override
   void initState() {
     super.initState();
+    _dataModelHiveOperation.start();
     _getAll();
   }
 
@@ -42,8 +42,10 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
   }
 
   Future<void> _getAll() async {
-    itemDBModelList = _dataModelHiveOperation.getAll();
-    setState(() {});
+    _dataModelHiveOperation
+        .start(); // Replace 'your_box_name' with the actual name of your Hive box
+    var items = _dataModelHiveOperation.getAll();
+    print(items);
   }
 
   @override
@@ -102,6 +104,8 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
                 ? SizedBox()
                 : ElevatedButton(
                     onPressed: () async {
+                      dbModel!.isActive = false;
+                      dbModel!.isComplete = false;
                       _dataModelHiveOperation.addOrUpdateItem(dbModel!);
                       setState(() {});
                     },
