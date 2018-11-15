@@ -17,8 +17,6 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
   final DataModelHiveOperation _dataModelHiveOperation =
       DataModelHiveOperation(); //! database operations
 
-
-
   @override
   void initState() {
     super.initState();
@@ -41,10 +39,9 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
     }
   }
 
-  Future<void> _getAll() async {
-    _dataModelHiveOperation
-        .start(); // Replace 'your_box_name' with the actual name of your Hive box
-    var items = _dataModelHiveOperation.getAll();
+  void _getAll() {
+    var items =
+        _dataModelHiveOperation.getItem("27f5c480-beef-1e7d-95e0-97a57afb9036");
     print(items);
   }
 

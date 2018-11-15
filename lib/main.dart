@@ -6,6 +6,7 @@ import 'home/my_home_page.dart';
 
 Future<void> main() async {
   await HiveDatabaseManager().setup();
+
   runApp(const MyApp());
 }
 

@@ -1,6 +1,6 @@
+import 'package:flutter/src/foundation/change_notifier.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-import '../models/data_model.dart';
 import 'hive_model_mixin.dart';
 
 part './hive_manager_mixin.dart';
@@ -37,16 +37,9 @@ class HiveDatabaseOperation<T extends HiveModelMixin> with HiveManagerMixin<T> {
   Future<void> deleteItem(T model) => _box.delete(
       model); //! bu şekilde de tek satır yazarsak async ve await olamayabilir
 
-  Future<List<T>> getAll() async {
+  Future<List<T>?> getAll() async {
     var item = await _box.values.toList();
 
-    print(item);
     return item;
-  }
-
-  int getMaxId() {
-    List<T> sortedList = _box.values.toList();
-    sortedList.sort((a, b) => b.id.compareTo(a.id));
-    return (sortedList.isNotEmpty ? sortedList.first.id : 0) + 1;
   }
 }

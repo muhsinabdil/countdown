@@ -32,9 +32,7 @@ class DataModel with HiveModelMixin {
   int get id => this.id;
 
   @override
-  set id(int value) {
-    this.id = value;
-  }
+  set id(int value) {}
 
   DataModel.fromJson(Map<String, dynamic> json) {
     title = json['title'];
