@@ -1,5 +1,4 @@
 import 'package:countdown/models/data_model.dart';
-import 'package:countdown/services/store.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -13,8 +12,7 @@ final class HiveDatabaseManager implements IDatabaseManager {
   @override
   Future<void> setup() async {
     await _open();
-    final HiveDatabaseManager databaseManager = HiveDatabaseManager();
-    databaseManager._initialOperation();
+    _initialOperation();
   }
 
   @override

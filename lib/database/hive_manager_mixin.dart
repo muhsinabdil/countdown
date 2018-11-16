@@ -9,16 +9,19 @@ mixin HiveManagerMixin<T> {
 
   late Box<T> _box;
   Future<void> start() async {
-    if (Hive.isBoxOpen(_key)) return; //! açıksa tekrar açmayacak
-    _box = await Hive.openBox<T>(_key); //! bu key mixin ile oluşuyor
-  }
-
-  Future<void> stop() async {
-    await _box.close();
+    _box = await Hive.box(_key);
+    if (Hive.isBoxOpen(_key)) {
+      //! açıksa tekrar açmayacak
+      //! mevcut box alınacak
+      // _box = Hive.box(_key); //! orijinalde bu yok
+    } else {
+      _box = await Hive.openBox<T>(_key); //! bu key mixin ile oluşuyor
+    }
   }
 
   Future<void> clear() async {
     await _box.clear();
   }
+
   //!
 }

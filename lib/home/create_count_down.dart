@@ -21,7 +21,6 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
   void initState() {
     super.initState();
     _dataModelHiveOperation.start();
-    _getAll();
   }
 
   Future<void> _selectDate() async {
@@ -39,10 +38,8 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
     }
   }
 
-  void _getAll() {
-    var items =
-        _dataModelHiveOperation.getItem("27f5c480-beef-1e7d-95e0-97a57afb9036");
-    print(items);
+  Future<void> getAll() async {
+    itemDBModelList = await _dataModelHiveOperation.getAll();
   }
 
   @override
@@ -90,6 +87,10 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
               ),
             ),
             SizedBox(height: 16.0),
+            ElevatedButton(
+              onPressed: getAll,
+              child: Text("data"),
+            ),
             ElevatedButton(
               onPressed: _selectDate,
               child: Text(selectedDate == null

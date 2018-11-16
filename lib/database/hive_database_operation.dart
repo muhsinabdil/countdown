@@ -1,6 +1,4 @@
-import 'package:flutter/src/foundation/change_notifier.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-
 import 'hive_model_mixin.dart';
 
 part './hive_manager_mixin.dart';
@@ -34,12 +32,10 @@ class HiveDatabaseOperation<T extends HiveModelMixin> with HiveManagerMixin<T> {
     return _box.get(key);
   }
 
-  Future<void> deleteItem(T model) => _box.delete(
-      model); //! bu şekilde de tek satır yazarsak async ve await olamayabilir
+//! bu şekilde de tek satır yazarsak async ve await olamayabilir
+  Future<void> deleteItem(String key) => _box.delete(key);
 
-  Future<List<T>?> getAll() async {
-    var item = await _box.values.toList();
-
-    return item;
+  Future<List<T>> getAll() async {
+    return _box.values.toList();
   }
 }

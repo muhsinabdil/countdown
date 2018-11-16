@@ -28,11 +28,7 @@ class DataModel with HiveModelMixin {
     return uuid.v1();
   }
 
-  @override
-  int get id => this.id;
 
-  @override
-  set id(int value) {}
 
   DataModel.fromJson(Map<String, dynamic> json) {
     title = json['title'];
