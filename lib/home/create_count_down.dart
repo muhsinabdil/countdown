@@ -20,7 +20,7 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
   @override
   void initState() {
     super.initState();
-    _dataModelHiveOperation.start();
+    _dataModelHiveOperation.start().then((value) => getAll());
   }
 
   Future<void> _selectDate() async {
@@ -28,7 +28,7 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
       context: context,
       initialDate: DateTime.now(),
       firstDate: DateTime.now(),
-      lastDate: DateTime(2050),
+      lastDate: DateTime.now().add(Duration(days: 365 * 100)),
     );
 
     if (picked != null && picked != selectedDate) {
@@ -40,6 +40,7 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
 
   Future<void> getAll() async {
     itemDBModelList = await _dataModelHiveOperation.getAll();
+    setState(() {});
   }
 
   @override

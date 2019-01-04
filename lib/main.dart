@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'database/hive_database_manager.dart';
 
 import 'home/my_home_page.dart';
+import 'home/splash_screen.dart';
 
 Future<void> main() async {
   await HiveDatabaseManager().setup();
@@ -59,7 +60,8 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: MyHomePage(),
+      themeMode: ThemeMode.dark,
+      home: SplashScreen(),
     );
   }
 }
