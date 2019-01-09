@@ -22,6 +22,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   List<DataModel>? itemDBModelList = <DataModel>[];
+  DataModel? model;
   late List<MotivationModel>? motivationModelList;
   final DataModelHiveOperation _dataModelHiveOperation =
       DataModelHiveOperation(); //! database operations
@@ -41,6 +42,9 @@ class _MyHomePageState extends State<MyHomePage> {
           builder: (context) => CreateCountDownPage(),
         ),
       );
+    } else {
+      model =
+          itemDBModelList!.where((element) => element.isActive == true).first;
     }
 
     setState(() {});
@@ -59,9 +63,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final birthday = DateTime(2028, 02, 09);
+    final date1 = model == null ? DateTime.now() : DateTime.parse(model!.date!);
     final date2 = DateTime.now();
-    final difference = birthday.difference(date2);
+    final difference = date1.difference(date2);
 
     int year = difference.inDays ~/ 365;
     year++; //! because we are not counting the current year
@@ -103,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             );
                           },
                           child: Text(
-                            "MyCountdown",
+                            model == null ? 'Create' : model!.title!,
                             style: Theme.of(context)
                                 .textTheme
                                 .titleLarge

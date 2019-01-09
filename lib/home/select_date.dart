@@ -1,4 +1,5 @@
 import 'package:countdown/home/create_count_down.dart';
+import 'package:countdown/home/my_home_page.dart';
 import 'package:countdown/utils/date_return.dart';
 import 'package:countdown/widgets/create_float_button.dart';
 import 'package:countdown/widgets/custom_shimmer.dart';
@@ -33,7 +34,6 @@ class _SelectDateState extends State<SelectDate> {
         ),
       );
     }
-
     setState(() {});
   }
 
@@ -57,7 +57,15 @@ class _SelectDateState extends State<SelectDate> {
                   )
                 : InkWell(
                     onTap: () {
-                      Navigator.of(context).pop(index);
+                      itemDBModelList![index].isActive = true;
+                      _dataModelHiveOperation
+                          .addOrUpdateItem(itemDBModelList![index]);
+                      Navigator.of(context).pushAndRemoveUntil(
+                        MaterialPageRoute(
+                          builder: (context) => MyHomePage(),
+                        ),
+                        (route) => false,
+                      );
                     },
                     child: Ink(
                       decoration: BoxDecoration(
@@ -102,7 +110,7 @@ class _SelectDateState extends State<SelectDate> {
                               setState(() {
                                 _dataModelHiveOperation
                                     .deleteItem(itemDBModelList![index]);
-                                itemDBModelList!.removeAt(index);
+                                getAll();
                               });
                             },
                             icon: Icon(Icons.delete),
