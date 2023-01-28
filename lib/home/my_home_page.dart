@@ -21,7 +21,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<DataModel>? itemDBModelList;
+  List<DataModel>? itemDBModelList = <DataModel>[];
   late List<MotivationModel>? motivationModelList;
   final DataModelHiveOperation _dataModelHiveOperation =
       DataModelHiveOperation(); //! database operations
@@ -34,6 +34,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> getAll() async {
     itemDBModelList = await _dataModelHiveOperation.getAll();
+
+    if (itemDBModelList!.length <= 0) {
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) => CreateCountDownPage(),
+        ),
+      );
+    }
 
     setState(() {});
   }
@@ -90,9 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           onPressed: () {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                  builder: (context) => SelectDate(
-                                        dataList: itemDBModelList,
-                                      ),
+                                  builder: (context) => SelectDate(),
                                   fullscreenDialog: true),
                             );
                           },

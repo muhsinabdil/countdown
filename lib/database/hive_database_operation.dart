@@ -33,7 +33,9 @@ class HiveDatabaseOperation<T extends HiveModelMixin> with HiveManagerMixin<T> {
   }
 
 //! bu şekilde de tek satır yazarsak async ve await olamayabilir
-  Future<void> deleteItem(String key) => _box.delete(key);
+  Future<void> deleteItem(T model) async {
+    _box.delete(model.key);
+  }
 
   Future<List<T>> getAll() async {
     return _box.values.toList();

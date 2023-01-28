@@ -87,11 +87,10 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
                       dbModel!.isActive = false;
                       dbModel!.isComplete = false;
                       _dataModelHiveOperation.addOrUpdateItem(dbModel!);
-                      Navigator.of(context).pushAndRemoveUntil(
+                      Navigator.of(context).push(
                         MaterialPageRoute(
                           builder: (context) => MyHomePage(),
                         ),
-                        (route) => false,
                       );
                     },
                     child: Text(

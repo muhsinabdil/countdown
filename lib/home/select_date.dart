@@ -4,12 +4,39 @@ import 'package:countdown/widgets/create_float_button.dart';
 import 'package:countdown/widgets/custom_shimmer.dart';
 import 'package:flutter/material.dart';
 
+import '../database/data_model_hive_operation.dart';
 import '../models/data_model.dart';
 
-class SelectDate extends StatelessWidget {
-  final List<DataModel>? dataList;
+class SelectDate extends StatefulWidget {
+  @override
+  State<SelectDate> createState() => _SelectDateState();
+}
 
-  const SelectDate({Key? key, required this.dataList}) : super(key: key);
+class _SelectDateState extends State<SelectDate> {
+  List<DataModel>? itemDBModelList = <DataModel>[];
+  final DataModelHiveOperation _dataModelHiveOperation =
+      DataModelHiveOperation(); //! database operations
+
+  initState() {
+    super.initState();
+
+    _dataModelHiveOperation.start().then((value) => getAll());
+  }
+
+  Future<void> getAll() async {
+    itemDBModelList = await _dataModelHiveOperation.getAll();
+
+    if (itemDBModelList!.length <= 0) {
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) => CreateCountDownPage(),
+        ),
+      );
+    }
+
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
@@ -20,10 +47,11 @@ class SelectDate extends StatelessWidget {
       floatingActionButton: CreateFloatButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       body: ListView.builder(
-        itemCount: dataList == null ? 10 : dataList!.length,
+        padding: EdgeInsets.zero,
+        itemCount: itemDBModelList == null ? 10 : itemDBModelList!.length,
         itemBuilder: (context, index) {
           return ListTile(
-            title: dataList == null
+            title: itemDBModelList == null
                 ? CustomShimmer(
                     height: screenSize.height * 0.1,
                   )
@@ -37,38 +65,53 @@ class SelectDate extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                       ),
                       height: screenSize.height * 0.1,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          children: [
-                            Text(
-                              dataList![index].title!,
-                              style: Theme.of(context).textTheme.bodySmall,
-                            ),
-                            Spacer(),
-                            Text(
-                              DateReturnTypes().dateDMYHourStr(
-                                  DateTime.parse(dataList![index].date!)),
-                              style: Theme.of(context).textTheme.bodySmall,
-                            ),
-                            Spacer(),
-                            IconButton(
-                              onPressed: () {
-                                Navigator.of(context).push(
-                                  MaterialPageRoute(
-                                    builder: (context) => CreateCountDownPage(
-                                        model: dataList![index]),
-                                  ),
-                                );
-                              },
-                              icon: Icon(Icons.edit),
-                              style: ButtonStyle(
-                                backgroundColor:
-                                    MaterialStateProperty.all(Colors.white),
+                      child: Row(
+                        children: [
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                itemDBModelList![index].title!,
+                                style: Theme.of(context).textTheme.bodyMedium,
                               ),
-                            )
-                          ],
-                        ),
+                              Text(
+                                DateReturnTypes().dateDMYHourStr(DateTime.parse(
+                                    itemDBModelList![index].date!)),
+                                style: Theme.of(context).textTheme.bodyMedium,
+                              ),
+                            ],
+                          ),
+                          Spacer(),
+                          IconButton(
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => CreateCountDownPage(
+                                      model: itemDBModelList![index]),
+                                ),
+                              );
+                            },
+                            icon: Icon(Icons.edit),
+                            style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStateProperty.all(Colors.white),
+                            ),
+                          ),
+                          IconButton(
+                            onPressed: () {
+                              setState(() {
+                                _dataModelHiveOperation
+                                    .deleteItem(itemDBModelList![index]);
+                                itemDBModelList!.removeAt(index);
+                              });
+                            },
+                            icon: Icon(Icons.delete),
+                            style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStateProperty.all(Colors.white),
+                            ),
+                          )
+                        ],
                       ),
                     ),
                   ),
