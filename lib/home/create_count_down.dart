@@ -1,10 +1,18 @@
-import 'package:countdown/constants/app_const.dart';
-import 'package:countdown/database/data_model_hive_operation.dart';
-import 'package:countdown/models/data_model.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 
+import 'package:countdown/constants/app_const.dart';
+import 'package:countdown/database/data_model_hive_operation.dart';
+import 'package:countdown/home/my_home_page.dart';
+import 'package:countdown/models/data_model.dart';
+
 class CreateCountDownPage extends StatefulWidget {
+  DataModel? model;
+
+  CreateCountDownPage({
+    Key? key,
+    this.model,
+  }) : super(key: key);
   @override
   _CreateCountDownPageState createState() => _CreateCountDownPageState();
 }
@@ -20,7 +28,12 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
   @override
   void initState() {
     super.initState();
-    _dataModelHiveOperation.start().then((value) => getAll());
+    _dataModelHiveOperation.start();
+
+    if (widget.model != null) {
+      dbModel = widget.model;
+      selectedDate = DateTime.parse(dbModel!.date!);
+    }
   }
 
   Future<void> _selectDate() async {
@@ -38,11 +51,6 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
     }
   }
 
-  Future<void> getAll() async {
-    itemDBModelList = await _dataModelHiveOperation.getAll();
-    setState(() {});
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,29 +62,6 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            ...itemDBModelList!
-                .map((e) => Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                            borderRadius: kBigBorderRadius,
-                            color: Colors.deepPurple),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            children: [
-                              Text(e.title!),
-                              SizedBox(
-                                width: 15,
-                              ),
-                              Spacer(),
-                              Text(e.date!.substring(0, 10)),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ))
-                .toList(),
             TextField(
               onChanged: (value) {
                 dbModel!.title = value;
@@ -89,14 +74,10 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
             ),
             SizedBox(height: 16.0),
             ElevatedButton(
-              onPressed: getAll,
-              child: Text("data"),
-            ),
-            ElevatedButton(
               onPressed: _selectDate,
               child: Text(selectedDate == null
                   ? 'Select Date'
-                  : 'Selected Date: ${selectedDate.toString()}'),
+                  : '${selectedDate.toString()}'),
             ),
             SizedBox(height: 16.0),
             dbModel == null
@@ -106,7 +87,12 @@ class _CreateCountDownPageState extends State<CreateCountDownPage> {
                       dbModel!.isActive = false;
                       dbModel!.isComplete = false;
                       _dataModelHiveOperation.addOrUpdateItem(dbModel!);
-                      setState(() {});
+                      Navigator.of(context).pushAndRemoveUntil(
+                        MaterialPageRoute(
+                          builder: (context) => MyHomePage(),
+                        ),
+                        (route) => false,
+                      );
                     },
                     child: Text(
                       'Save',
